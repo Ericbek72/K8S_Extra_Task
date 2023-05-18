@@ -1,5 +1,5 @@
 module "cpu_alert_policy"{
-    source = "../CPU_alert_module"
+    source = "git@github.com:Ericbek72/K8S_Extra_Task/CPU_alert_module"
     project_id = "fine-effect-382702"
     cpu_alert_pol = "CRITICAL - High CPU usage on erkins-1st-cluster tf-alert-module"
     cpu_alert_pol_cond = "CRITICAL - High CPU usage on erkins-1st-cluster-terraform-module"

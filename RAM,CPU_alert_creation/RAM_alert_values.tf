@@ -1,5 +1,5 @@
 module "ram_alert_policy"{
-    source = "../RAM_alert_module"
+    source = "git@github.com:Ericbek72/K8S_Extra_Task/RAM_alert_module"
     project_id = "fine-effect-382702"
     ram_alert_pol = "CRITICAL - High memory usage on erkins-1st-cluster tf-alert-module"
     ram_alert_pol_cond = "CRITICAL - High memory usage on erkins-1st-cluster-terraform-module"

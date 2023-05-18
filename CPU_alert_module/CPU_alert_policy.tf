@@ -1,5 +1,5 @@
 module "notification_channel"{
-    source = "../Notif_Chan_Module"
+    source = "git@github.com:Ericbek72/K8S_Extra_Task/Notif_Chan_Module"
     project_id = "fine-effect-382702"
     notif-name = "My_personal_email"
     notif-type = "email"
