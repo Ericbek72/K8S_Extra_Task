@@ -16,7 +16,7 @@ jobs:
         uses: hashicorp/setup-terraform@v1
 
       - name: Set up GCP credentials
-        run: echo "${{ secrets.GCP_SA_KEY }}" > $HOME /gcp_credentials.json
+        run: echo "${{ secrets.GCP_SA_KEY }}" > $HOME/gcp_credentials.json
 
       - name: Configure GCP credentials
         run: export GOOGLE_APPLICATION_CREDENTIALS="$HOME/gcp_credentials.json"
