@@ -34,7 +34,7 @@ jobs:
         run: terraform plan -out=tfplan
 
       - name: Terraform Apply
-        run: terraform apply tfplan -auto-approve
+        run: terraform apply tfplan -auto-approve var-file=tfplan
         # Add `-auto-approve` flag if you want to automate the approval step
 
       # - name: Set up gcloud CLI
