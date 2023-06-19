@@ -2,7 +2,7 @@ name: Nightly Terraform Plan & Apply
 
 on:
   schedule:
-    - cron: "* * * * *"
+    - cron: "* 23 * * *"
 
 jobs:
   terraform:
