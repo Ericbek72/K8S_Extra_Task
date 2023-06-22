@@ -1,8 +1,8 @@
 module "cpu_alert_policy"{
     source = "git@github.com:Ericbek72/K8S_Extra_Task/CPU_alert_module"
     project_id = "fine-effect-382702"
-    cpu_alert_pol = "CRITICAL - High CPU usage on erkins-1st-cluster tf-alert-module-workflow"
-    cpu_alert_pol_cond = "CRITICAL - High CPU usage on erkins-1st-cluster-terraform-module"
+    cpu_alert_pol = "CRITICAL - High CPU usage on cluster-2 tf-alert-module-workflow"
+    cpu_alert_pol_cond = "CRITICAL - High CPU usage on cluster-2-terraform-module"
     cpu-threshold-filter = "resource.type = \"k8s_node\" AND metric.type = \"kubernetes.io/node/cpu/allocatable_utilization\""
     cpu-wait-time = "0s"
     cpu-threshold = 0.15

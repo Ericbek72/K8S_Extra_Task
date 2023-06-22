@@ -1,8 +1,8 @@
 module "ram_alert_policy"{
     source = "git@github.com:Ericbek72/K8S_Extra_Task/RAM_alert_module"
     project_id = "fine-effect-382702"
-    ram_alert_pol = "CRITICAL - High memory usage on erkins-1st-cluster tf-alert-module-workflow"
-    ram_alert_pol_cond = "CRITICAL - High memory usage on erkins-1st-cluster-terraform-module"
+    ram_alert_pol = "CRITICAL - High memory usage on cluster-2 tf-alert-module-workflow"
+    ram_alert_pol_cond = "CRITICAL - High memory usage on cluster-2-terraform-module"
     ram-threshold-filter = "resource.type = \"k8s_node\" AND metric.type = \"kubernetes.io/node/memory/allocatable_utilization\""
     ram-wait-time = "0s"
     ram-threshold = 0.58
